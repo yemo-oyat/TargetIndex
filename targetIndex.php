@@ -2,8 +2,6 @@
 
 function targetIndex($array, $target) {
     $nearestValue = 0;
-    $left = 0;
-    $right = count($array) - 1;
     $arrayLength = count($array);
     for ($n = 0; $n < $arrayLength; $n++) {        
         if (abs($target - $nearestValue) > abs( $target - $array[$n])) {
